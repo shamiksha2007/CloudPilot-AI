@@ -1,0 +1,51 @@
+{
+    "Service": {
+        "ServiceName": "cloudpilot-service",
+        "ServiceId": "5c12fa2aa27d4f61b5317c3671d46bd4",
+        "ServiceArn": "arn:aws:apprunner:ap-south-1:864981730114:service/cloudpilot-service/5c12fa2aa27d4f61b5317c3671d46bd4",
+        "ServiceUrl": "wnxgd3xvub.ap-south-1.awsapprunner.com",
+        "CreatedAt": "2026-07-23T10:26:31+05:30",
+        "UpdatedAt": "2026-07-23T10:26:31+05:30",
+        "Status": "OPERATION_IN_PROGRESS",
+        "SourceConfiguration": {
+            "ImageRepository": {
+                "ImageIdentifier": "864981730114.dkr.ecr.ap-south-1.amazonaws.com/cloudpilot:latest",
+                "ImageConfiguration": {
+                    "Port": "8000"
+                },
+                "ImageRepositoryType": "ECR"
+            },
+            "AutoDeploymentsEnabled": false,
+            "AuthenticationConfiguration": {
+                "AccessRoleArn": "arn:aws:iam::864981730114:role/AppRunnerECRAccessRole"
+            }
+        },
+        "InstanceConfiguration": {
+            "Cpu": "1024",
+            "Memory": "2048"
+        },
+        "HealthCheckConfiguration": {
+            "Protocol": "TCP",
+            "Path": "/",
+            "Interval": 5,
+            "Timeout": 2,
+            "HealthyThreshold": 1,
+            "UnhealthyThreshold": 5
+        },
+        "AutoScalingConfigurationSummary": {
+            "AutoScalingConfigurationArn": "arn:aws:apprunner:ap-south-1:864981730114:autoscalingconfiguration/DefaultConfiguration/1/00000000000000000000000000000001",
+            "AutoScalingConfigurationName": "DefaultConfiguration",
+            "AutoScalingConfigurationRevision": 1
+        },
+        "NetworkConfiguration": {
+            "EgressConfiguration": {
+                "EgressType": "DEFAULT"
+            },
+            "IngressConfiguration": {
+                "IsPubliclyAccessible": true
+            },
+            "IpAddressType": "IPV4"
+        }
+    },
+    "OperationId": "afa6aac79fb44353a61e8b01cef42688"
+}
